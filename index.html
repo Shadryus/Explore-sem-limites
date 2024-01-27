@@ -12,19 +12,26 @@
 <body>
     <main>
         <header>
-            <img src="./img/astronaut.svg" alt="">
+            <div class="hero">
+              <img src="./img/astronaut.svg" alt="">
+            </div>
             
-            <h1>Explore sem limites</h1>
-
-            <p>Porque o aprendizado é contínuo</p>
+            <div class="header-text">
+                <h1>Explore sem limites</h1>
+                <p>Porque o aprendizado é contínuo</p> 
+           
 
             <div class="arrow-wrapper">
-                <img src="./img/seta.svg" alt="">
+                <a href="#planets">
+                    <img src="./img/seta.svg" alt="">
+                </a>
             </div>
+        </div>
+            
             
         </header>
 
-        <div class="col-3">
+        <div id="planets" class="col-3">
             <div class="col-wrapper">
                 <img src="./img/planeta-amarelo.svg" alt="">
                 <h2>Não pare nunca</h2>
@@ -44,17 +51,36 @@
             </div>
         </div>
 
-        <form id="my-form">
-            <h2>Entre em contato</h2>
+        <section id="form">
+            <form action="#" method="get" id="my-form">
+                        <h2>Entre em contato</h2>
 
-            <div class="fieldset-wrapper">
-                <input id="form-name" type="text" placeholder="Seu nome">
-                <input id="form-email" type="email" placeholder="Email">
-                <input id="form-message" type="text" placeholder="Digite sua mensagem aqui...">
+                        <div class="fieldset-wrapper">
+                            <div class="input-container">
+                                <img src="./img/icon-person.svg" alt="">
+                                <input id="form-name" type="text" placeholder="Seu nome">
+                            </div>
+
+                            <div class="input-container">
+                                <img src="./img/icon-atsign.svg" alt="">
+                                <input id="form-email" type="text" placeholder="Email">
+                            </div>
+
+                            <div class="input-container">
+                                <textarea id="form-message" placeholder="Digite sua mensagem aqui..." rows="7"></textarea>
+                            </div>
+                            
+
+                            </div>
+                        </div>
+                        <button type="submit" form="my-form" value="Submit">Enviar mensagem</button>
+            </form>
+            <div class="stars">
+                <img src="./img/stars.svg" alt="">
             </div>
-            <button form="my-form">Enviar mensagem</button>
-        </form>
 
+        </section>
+       
         <footer>
             <p>© 2023 - Rocketseat Explorer</p>
         </footer>
